@@ -1,0 +1,6 @@
+.env
+results/*
+!results/.gitkeep
+.venv/
+*.csv
+qgis_files/
