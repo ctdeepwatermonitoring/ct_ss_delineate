@@ -45,7 +45,7 @@ try:
     cursor = None
     if connection.is_connected():
         # Specify the path to the csv file and read it into a DataFrame
-        csv_path = '/home/deepuser/watershed_project/abm_24-25_temp_metrics.csv'
+        csv_path = '/home/deepuser/watershed_project/abm_24-25_temp_metrics.csv' # Specify the path to your input csv file here
         data = pd.read_csv(csv_path)
 
         # Extract cold water sites

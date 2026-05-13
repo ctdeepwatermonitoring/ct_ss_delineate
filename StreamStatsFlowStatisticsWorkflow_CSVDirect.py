@@ -28,10 +28,10 @@ def snap_to_stream(lat, lon, streams_geojson_path):
     # Return the snapped coordinates (latitude, longitude)
     return snapped_point.y, snapped_point.x
 
-# Read and filter CSV data
-csv_path = '/home/deepuser/watershed_project/test.csv'
+# Read CSV data
+csv_path = '/home/deepuser/watershed_project/test.csv' # Specify the path to your input csv file here
 data = pd.read_csv(csv_path)
-print(data.head())
+#print(data.head())
 
 # Extract CSV filename without extension for output naming
 csv_filename = os.path.basename(csv_path)
@@ -47,7 +47,7 @@ NSSServiceURLS = {
     'computeFlowStats': 'https://streamstats.usgs.gov/nssservices/scenarios/estimate'
 }
 
-#Step 1 - Delineate the watershed
+# Step 1 - Delineate the watershed
 # Initialize dictionaries to store results organized by staSeq and statGroupID
 all_geometries = {}
 all_basin_characteristics = {}
